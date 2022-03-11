@@ -1,0 +1,11 @@
+dependencies {
+	compile project(":modules:Registration-backend:Registration-backend-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+}
+
+buildService {
+	apiDir = "../Registration-backend-api/src/main/java"
+}
+
+group = "com.amf.service.registration"
